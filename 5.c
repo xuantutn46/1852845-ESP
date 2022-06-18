@@ -39,7 +39,7 @@ void ATimerCallback (xTimerHandle pxTimer){
             count++;
         }
     }
-    if (tID==1){
+    else{
         static int count = 1;
         if(count<=h3){
             printf("Times %d: Ihaha at %d ms\n",count,(int)clock());
@@ -50,7 +50,6 @@ void ATimerCallback (xTimerHandle pxTimer){
             count++;
         }
     }
-   
 }
 
 void app_main(void)
